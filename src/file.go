@@ -7,7 +7,7 @@ import (
 
 func main() {
     // 입력파일 열기
-    fi, err := os.Open("C:\\temp\\1.txt")
+    fi, err := os.Open(".\\1.txt")
     if err != nil {
         panic(err)
 	}
@@ -15,7 +15,7 @@ func main() {
     defer fi.Close()
  
     // 출력파일 생성
-    fo, err := os.Create("C:\\temp\\2.txt")
+    fo, err := os.Create(".\\2.txt")
     if err != nil {
         panic(err)
 	}
