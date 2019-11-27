@@ -1,0 +1,38 @@
+Revel	https://revel.github.io
+Beego	http://beego.me
+Martini	https://github.com/go-martini/martini
+Gin	https://gin-gonic.github.io/gin
+GoCraft	https://github.com/gocraft/web
+Traffic	https://github.com/pilu/traffic
+Gorilla	http://www.gorillatoolkit.org
+
+# revel framework 설치
+go get github.com/revel/revel
+
+# revel 실행파일 설치 (윈도우즈의 경우 revel.exe 설치)
+go get github.com/revel/cmd/revel
+
+# MyWeb 이라는 새 프로젝트 생성
+revel new MyWeb
+
+
+src
+    MyWeb               App root
+      app               App sources
+        controllers     App controllers
+          init.go       Interceptor registration
+        models          App domain models
+        routes          Reverse routes (generated code)
+        views           Templates
+      tests             Test suites
+      conf              Configuration files
+        app.conf        Main configuration file
+        routes          Routes definition
+      messages          Message files
+      public            Public assets
+        css             CSS files
+        js              Javascript files
+        images          Image files
+
+# MyWeb 실행
+revel run MyWeb
